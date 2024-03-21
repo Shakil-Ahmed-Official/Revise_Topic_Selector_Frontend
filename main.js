@@ -15,7 +15,7 @@ let dsaContainer = document.querySelector('.dsa-topic-container');
 function fetchData(url) {
     let promise = new Promise((resolve) => {
         const request = new XMLHttpRequest();
-        request.open('GET', `http://localhost:3000/${url}`, true);
+        request.open('GET', `https://revise-topic-selector-backend.onrender.com/${url}`, true);
         request.send();
         request.onreadystatechange = () => {
             if(request.readyState === 4 && request.status === 200) {
