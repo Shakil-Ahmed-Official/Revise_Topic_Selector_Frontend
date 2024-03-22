@@ -57,7 +57,7 @@ jsBtn.addEventListener('click', () => {
 });
 
 nodeBtn.addEventListener('click', () => {
-    let topic = '4.' + Math.ceil(Math.random() * 63);
+    let topic = '4.' + Math.ceil(Math.random() * 64);
     fetchData('65faf7cba3ec10c637beea7e')
     .then((docData) => {
         nodeContainer.innerText = `${topic} => ${docData[topic]}`;
